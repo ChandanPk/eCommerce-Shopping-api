@@ -3,5 +3,6 @@ module.exports.login_get = (req, res) => {
 }
 
 module.exports.login_post = (req, res) => {
-    res.send("Still wotking as post")
+    const body = req.body
+    res.json(body)
 }
